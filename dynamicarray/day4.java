@@ -1,4 +1,3 @@
-import java.util.*;
 public class day4 {
     public static void main(String... args){
         DynamicArray dy= new DynamicArray();
