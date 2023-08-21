@@ -13,6 +13,7 @@ public class day4 {
         System.out.println("capacity: "+dy.capacity);
     }    
 }
+// hello
 class DynamicArray{
     int capacity=10;
     Object[] arr;
@@ -44,7 +45,12 @@ class DynamicArray{
     public void delete(Object data){
         for(int i=0;i<size;i++){
             if(arr[i]==data){
-                
+                for(int j=0;j<size-i-1;j++){
+                    arr[i+j]=arr[i+j+1];
+                }
+                arr[size-1]=null;
+                size--;
+                break;
             }
         }
     }
